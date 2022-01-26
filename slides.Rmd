@@ -1,0 +1,59 @@
+---
+title: "Presentación sobre (...)"
+subtitle: "Encuesta Microemprendimiento"
+author: "<br>Valentina Andrade de la Horra<br> <span style = 'font-size: 60%;'> Instituto Nacional de Estadística<br> Departamento de Estadísticas del Trabajo</span>"
+date: '<span style = "font-size: 50%;">`r format(Sys.Date(), format = "%A %d de %B, %Y")`</span>'
+output:
+  xaringan::moon_reader:
+    css: ["input/css/ine.css"]
+    nature:
+      titleSlideClass: ["center", "middle"]
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  fig.show = TRUE,
+  hiline = TRUE)
+```
+
+```{r packages, include = F}
+library(xaringanthemer)
+#remotes::install_github("gadenbuie/xaringanthemer")
+
+```
+
+## Primera slide
+
+El texto puede ser en **negrita**, en __cursiva__,  ~~tachado~~, o `inline code`.
+
+[Podemos linkear a otra slide](#final).
+
+---
+
+class: inverse center middle
+
+# 1. Primer tópico
+
+
+---
+name: final
+class: center, middle
+
+# Gracias
+
+Slides creadas utilizando:
+
+[**xaringan**](https://github.com/yihui/xaringan)<br>
+[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
